@@ -1,69 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Front-end foundations: HTML forms</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <main>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Front-end foundations: HTML forms</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
+<body>
+  <main>
+    <center>
       <form>
-
-
         <div>
-          <label for="name">Name:</label>
-          <input
-          id="name"
-          type="text"
-          name="name"
-          placeholder="" />
+          <label for="name">Name:</label><br />
+          <input id="name" type="text" autofocus="on" name="name" />
         </div>
-
+        <br />
         <div>
-          <label for="location">Email:</label>
-          <input
-            id="location"
-            type="text"
-            name="zipcode"
-            autofocus="on"
-            maxlength="5"
-            required
-          />
+          <label for="location">Email:</label><br />
+          <input id="location" type="text" name="email" required />
         </div>
-
-
+        <br />
         <div>
-  <label for="form-message">Your message:</label>
-  <textarea
-    id="form-message"
-    name="message"
-    autofocus="on"
-    required
-    maxlength="200"
-    placeholder=""
-  ></textarea>
-</div>
-
-
-
-
-
-<button type="submit">Submit</button>
-
-
-
+          <label for="form-message">Message:</label><br />
+          <textarea id="form-message" rows="10" cols="30" name="message" required maxlength="200"></textarea>
+        </div>
+        <button type="submit">Submit</button>
       </form>
+    </center>
+  </main>
+</body>
 
-
-
-    </main>
-  </body>
 </html>
